@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content='width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes'>
-    <title>Unity WebGL Player | Tunnel_AR</title>
+    <title>Unity WebGL Player | Finalunityar</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
          html{
@@ -35,7 +35,13 @@
 <body>
     <script src="app.js" type="text/javascript"></script>
     <!--IMAGETARGETS-->
-		<imagetarget id='Testing3' src='targets/Testing3.jpg'></imagetarget>
+		<imagetarget id='bfly' src='targets/bfly.png'></imagetarget>
+		<imagetarget id='flower' src='targets/flower.png'></imagetarget>
+		<imagetarget id='lady' src='targets/lady.png'></imagetarget>
+		<imagetarget id='reel' src='targets/reel.png'></imagetarget>
+		<imagetarget id='rmn' src='targets/rmn.png'></imagetarget>
+		<imagetarget id='bear' src='targets/bear.png'></imagetarget>
+		<imagetarget id='printtest' src='targets/printtest.jpg'></imagetarget>
 
     <div id="startWebcamDiv" class="ctaDiv">
         <p style="text-align: center; width:60vw">This augmented reality experience requires access to your device's camera</p>
@@ -53,7 +59,7 @@
             </div>
         </div>
     </div>
-    <script src="Build/Host Test.loader.js"></script>
+    <script src="Build/test1_sound_solidtexture_gkeurl_sync.loader.js"></script>
     <script>
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
@@ -68,12 +74,12 @@
                 
                 document.getElementById("startWebcamDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/Host Test.data",
-                    frameworkUrl: "Build/Host Test.framework.js",
-                    codeUrl: "Build/Host Test.wasm",
+                    dataUrl: "Build/test1_sound_solidtexture_gkeurl_sync.data",
+                    frameworkUrl: "Build/test1_sound_solidtexture_gkeurl_sync.framework.js",
+                    codeUrl: "Build/test1_sound_solidtexture_gkeurl_sync.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
-                    productName: "Tunnel_AR",
+                    productName: "Finalunityar",
                     productVersion: "0.1",
                     //webglContextAttributes: { "preserveDrawingBuffer": true },
                     // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
